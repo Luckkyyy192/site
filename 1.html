@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+html>
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link href="https://www.dota2.com/public/css/global.css?v=b8830934&amp;l=russian&amp;_cdn=cloudflare" rel="stylesheet" type="text/css" >
+    <link href="https://www.dota2.com/public/css/global_english.css?v=CW5uWqLO6i-b&amp;l=russian&amp;_cdn=cloudflare" rel="stylesheet" type="text/css" >
+    <link href="https://www.dota2.com/public/css/publicheader.css?v=cyopT9vHDJru&amp;l=russian&amp;_cdn=cloudflare" rel="stylesheet" type="text/css" >
+    <link href="https://www.dota2.com/public/css/reborn_template.css?v=VjZbpFJ15XwM&amp;l=russian&amp;_cdn=cloudflare" rel="stylesheet" type="text/css" >
+    <link href="https://www.dota2.com/public/css/reborn_workshop.css?v=0hic6hemSTAQ&amp;l=russian&amp;_cdn=cloudflare" rel="stylesheet" type="text/css" >
+    <script type="text/javascript" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/javascript/static/jquery-1.7.1.min.js?v=8830934"></script>
+    <script type="text/javascript">$J = jQuery;</script><script type="text/javascript" src="https://www.dota2.com/public/shared/javascript/shared_global.js?v=KjG2IAfLil8v&amp;l=russian&amp;_cdn=cloudflare" ></script>
+    <script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script> <title>Dota 2 Workshop - Technical Requirements</title>
+    <meta property="og:title" content="Dota 2 - " />
+    <meta property="og:type" content="game" />
+    <meta property="og:url" content="https://www.dota2.com/" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Dota2.com" />
+    <meta property="fb:admins" content="726460592" />
+</head>
+<body>
+<div id="navBarBGRepeat" class="DotaFont">
+    <div id="navBarBG">
+        <div id="navBar">
+
+            <div id="navLoginAndLanguage">
+
+                <a href="https://steamcommunity.com/oauth/login?client_id=9B2C1229&response_type=token&state=workshop%2Frequirements%3Fl%3Drussian">Вход</a>
+
+                <span id="HeaderAdminSeperator" class="DotaFont">|</span>
+
+                <div id="languageSelector" class="DotaFont">
+                    <a href="javascript:void(0)">Мова</a> <img style="margin-bottom: 2px;" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/header/small_arrow.png" width="5px" height="3px" border="0" /><br />
+                    <div style="display:none;" id="languageList">
+                        <a class="DotaFont languageItem" href="?l=polish">Polski (польский)</a>
+                        <a class="DotaFont languageItem" href="?l=english">English (английский)</a>
+                        <a class="DotaFont languageItem" href="?l=ukrainian">Українська (украинский)</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="file:///D:/xampp/htdocs/site/site2/2.html"><div id="Login">
+                Login
+            </div></a>
+            <span class="navItem navItemDotaLogo">
+      <a class="navBarItem DotaFont" href="https://www.dota2.com/home/">
+       <img border="0" class="DotaLogo" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/nav/logo.png"/>
+      </a>
+     </span>
+            <span id="HeaderSeperator" class="DotaFont">|</span>
+            <span class="navItem">
+        <a class="navBarItem DotaFont" href="https://www.dota2.com/news">Новини</a>
+       </span>
+
+            <span id="HeaderSeperator" class="DotaFont">|</span>
+            <span class="navItem">
+        <a class="navBarItem DotaFont" href="javascript:void(0)">Про гру</a>
+        <div style="display:none;" class="menuSubItemList">
+                                     <a class="DotaFont" href="https://www.dota2.com/heroes/">Герои</a>
+                    <a class="DotaFont" href="https://www.dota2.com/workshop/builds">Сборки</a>
+                    <a class="DotaFont" href="https://steamcommunity.com/app/570/guides" target="_blank">Руководства Steam</a>
+                    <a class="DotaFont" href="https://www.dota2.com/news/updates">Обновления</a>
+</div>
+<img class="dn_arrow" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/nav/arrow.png"/>
+</span>
+            </div>
+</div>
+</div>
+<script language="javascript">
+
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function PreloadHeaderImages()
+{
+//  Preload header rollover images
+//MM_preloadImages(
+//);
+}
+
+if ( document.addEventListener ) {
+document.addEventListener( "DOMContentLoaded", PreloadHeaderImages, false );
+} else if ( document.attachEvent ) {
+document.attachEvent( 'onDomContentLoaded', PreloadHeaderImages );
+}
+
+</script>
+
+
+
+<script language="javascript">
+function closeSubMenu( target ) {
+$(target).find('.dn_arrow').attr( "src", "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/nav/arrow.png" );
+$(target).find('.menuSubItemList').hide();
+}
+
+function closeAllSubMenus() {
+$('.navItem').each( function() {
+closeSubMenu( $(this) );
+});
+}
+
+function openSubMenu( target ) {
+closeAllSubMenus();
+
+$(target).find('.dn_arrow').attr( "src", "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/nav/arrow_over.png" );
+
+// Show the sub-menu
+var subItemList = $(target).find('.menuSubItemList');
+if ( subItemList.length ) {
+var itemTop = $(target).position().top + $(target).outerHeight() + 20;
+var itemLeft = $(target).position().left;
+subItemList
+.css({
+"top": itemTop + 'px',
+"left": itemLeft + 'px'
+})
+.fadeIn( 'fast' );
+}
+}
+
+$(document).ready( function () {
+// Deal with the nav bars
+$('.navItem').each( function() {
+$(this).hover( function () {
+$(this)
+.find('a.navBarItem img.top')
+.animate({
+"opacity": 1
+}, 100 );
+if ( $(this).find('.menuSubItemList').length !== 0 ) {
+openSubMenu( this );
+}
+},
+function () {
+$(this)
+.find('a.navBarItem img.top')
+.animate({
+"opacity": 0
+}, 100 );
+if ( $(this).find('.menuSubItemList').length !== 0 ) {
+closeSubMenu(this);
+}
+}
+);
+});
+
+// Deal with header drop-downs
+var strMenus = '#languageSelector';
+
+$(strMenus).each( function() {
+$(this).hover( function () {
+//show its submenu
+$( this ).find( 'div' ).fadeIn( 'fast' );
+},
+function () {
+//hide its submenu
+$( this ).find( 'div' ).hide();
+}
+);
+});
+});
+
+</script>
+
+<div id="Container_01">
+<div id="OverviewHeader">
+</div>
+<div id="Content_02" class="OverviewContent_02">
+<h3 style="margin-top: 0px;">Інформація про героїв <br/>і технічні потреби до предметів </h3>
+<ul>
+<li>По посиланнях нижче ви знайдете вихідні файли героїв з Dota 2 та технічну інформацію щодо створення предметів для них.</li>
+<li>Ця інформація стосується <a href="https://support.steampowered.com/kb_article.php?ref=5485-ERGH-9687">предметів для героїв</a> і <a href="https://support.steampowered.com/kb/7823-RUAZ-5739/">моделей для вмінь героїв</a>.</li>
+<li>Будь ласка, зверніться до посилань у <a href="https://www.dota2.com/workshop/">енциклопедії порад та вказівок по майстерні Dota 2</a> для отримання інформації щодо кур'єрів, вартів, зображень, музики та інших типів публікацій, а також основ створення внутрішньоігрових предметів.</li>
+<li>На сторінці кожного героя ви знайдете
+    <ul>
+        <li>Його/її біографію;</li>
+        <li>Максимальні розміри моделей та текстур;</li>
+        <li>Додаткову інформацію, необхідну для створення предметів, наприклад, назви кісток, до яких потрібно прикріпити зброю;</li>
+        <li>ZIP-архів з моделлю та текстурами героя, його предметів та викликаних істот. Частина з них містить файли у оновленому форматі FBX для Source 2, а також моделі для Maya.</li>
+    </ul>
+</li>
+<li>На цій сторінці перераховані лише герої з підтримкою Майстерні на рушії Source 2. Ми будемо поступово оновлювати існуючі файли героїв та додавати нові. Межі іконок героїв підкажуть вам, кого ми оновили або додали.</li>
+
+<br/>
+<div class="callout_top" id="hero"></div>
+<div class="callout_middle">
+<h2>Links to hero models and guidelines</h2>
+<div class="WorkshopImageKey">
+<div style="margin-left:2em" class="heroStatusBlock">
+<span style="right:0px" class="heroStatusNew">+</span>
+</div>&nbsp;&nbsp;Новий герой                <br /><br />
+
+<div style="margin-left:2em" class="heroStatusBlock">
+<span style="right:0px" class="heroStatusUpdated">!</span>
+</div>&nbsp;&nbsp;Обновлений герой
+
+</div>
+<!--div class="question">Links to hero models and guidelines</div-->
+<div class="answer"><br />
+<table id="hero_table" class="caption" width="100%" border="0" cellpadding="0px" cellspacing="14px">
+<tr>
+    <td align="center">
+
+<div class="heroStatusBlock">
+<a href="https://www.dota2.com/workshop/requirements/abaddon">
+
+<img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/abaddon_lg.png?v=8858199" width="100px" border="0"><br/>
+</a>
+
+</div><br />
+<a href="https://www.dota2.com/workshop/requirements/abaddon">Abaddon</a>
+</td>
+            <td align="center">
+
+<div class="heroStatusBlock">
+<a href="https://www.dota2.com/workshop/requirements/alchemist">
+
+<img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/alchemist_lg.png?v=8858199" width="100px" border="0"><br/>
+</a>
+
+</div><br />
+<a href="https://www.dota2.com/workshop/requir
+<div class="heroStatusBlock">
+<a href="https://www.dota2.com/workshop/requirements/ancient_ap
+
+<img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/ancient_apparition_lg.png?v=8858199" width="100px" border="0
